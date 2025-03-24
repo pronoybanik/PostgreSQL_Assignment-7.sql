@@ -88,9 +88,10 @@ HAVING
 
 -- 6:- Find the average price of books in the store.
 SELECT
-    avg(price)
+    ROUND(AVG(price), 2) AS avg_book_price
 FROM
     books;
+
 
 -- 7:- Query to increase the price of all books published before 2000 by 10%
 UPDATE
